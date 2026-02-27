@@ -1,0 +1,57 @@
+# GEMINI 3.0 Agent Manifest
+
+> [!IMPORTANT]
+> **LEITURA OBRIGATÓRIA**: Você DEVE ler este arquivo `GEMINI.md` por completo ao iniciar uma nova conversa antes de realizar qualquer tarefa. Isso garante que você esteja alinhado com as instruções mais recentes.
+
+## Principios
+Sempre ler os arquivos de memorys e learnings do projeto e contexto que estiver trabalhando, assim garante de seguir estrtura proposta.
+
+
+## 1. Core Directives
+**ALWAYS** read the internal files in the `global_skills` folder to align with the user's coding standards.
+- **Location**: `C:\Users\user\.gemini\antigravity\global_skills`
+
+## 2. Organization & Memory
+
+### Projects Memory (`projects_memory/`)
+**Goal**: Context preservation per project.
+- **Rule**: Create a distinct folder for **each** project inside `projects_memory/`. Inside that folder, create Markdown files for each major component.
+- **Naming Convention**: `projects_memory/[ProjectName]/[ProjectName]_[Type].md` (e.g., `projects_memory/Ecommerce/Ecommerce_Backend.md`).
+- **Content**:
+  - Tech Stack & Libraries
+  - Folder Structure & Architecture
+  - Design Patterns Used (Repositories, Services, etc.)
+  - Key Decisions & Trade-offs
+
+#### 📚 Aprendizados Recentes
+
+> [!IMPORTANT]
+> **Consulte sempre o arquivo central de aprendizados (índice global)** antes de iniciar qualquer tarefa para evitar erros de versão ou configuração.
+
+- 📖 **Índice Global de Aprendizados & Bugs**: [LEARNING.md](file:///C:/Users/user/.gemini/antigravity/learning/LEARNING.md)
+
+---
+*Nota: O arquivo LEARNING.md serve como índice mestre contendo os links para todos os aprendizados registrados.*
+
+## 3. Path Constants
+- **global_skills**: `C:\Users\user\.gemini\antigravity\global_skills`
+- **Root**: `C:\Users\user\.gemini\antigravity`
+- **Memory**: `C:\Users\user\.gemini\antigravity\projects_memory`
+- **Learning**: `C:\Users\user\.gemini\antigravity\learning`
+
+## 4. Language
+Sempre me responda em pt-br, tanto ao fazer os planejamentos quanto as tasks.
+
+## 5. Pesquisa & Documentação
+**Priorize a busca externa**. Em integrações ou erros recorrentes, utilize o acesso à internet para consultar documentações oficiais e a comunidade. **Não assuma comportamentos nem entre em loops de suposições**; valide incertezas com fontes atualizadas.
+
+## 6. Revisar!
+Ao fazer qualquer entrega de codigo, revise os aruquivos editados e garanta que neles não há erros de sintaxe como falta de fechamento de parenteses, chaves ou etc. Verifique se há algum erro de tipagem tambem e corrija.
+
+## 7 Strict Obedience & Checklist Protocol
+Para CADA solicitação do usuário, crie um checklist passo-a-passo no `task.md` ANTES de alterar qualquer código.
+Nunca marque um item como feito sem verificar explicitamente o arquivo modificado.
+Para CADA solicitação do usuario deve ser feito autoanalise tanto da sua solicitação e intenção do pedido quanto do contexto em que tiver trabalhando e entender TODOS os pontos que ele pediu e cumprir com cada uma das suas alterações.
+
+## 8 Clean Comments:
+**Não** coloque comentários óbvios no código. O código deve ser autoexplicativo. E se for colocar, coloque em português brasil.
