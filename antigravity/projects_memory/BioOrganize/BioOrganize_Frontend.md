@@ -37,5 +37,14 @@
 2. Não adicionamos `.pending` e `.rejected` aos `extraReducers`. O estado local de carregamento e as tratativas de erro são gerenciados **direto nos componentes** (usando `useState` e resolvendo as Promises do RTK via `unwrapResult()`).
 **Próximo Passo Futuro**: Migrar inteiramente chamadas de API do RTK para React Query (`useQuery` / `useMutation`).
 
+### 🚫 Arquivos Protegidos (NÃO MODIFICAR)
+- **`src/hooks/usePagination.ts`**: Este hook é considerado estável e **não deve ser alterado**. Para forçar refetch após criação/edição, use `useQueryClient` diretamente no componente consumidor e chame `invalidateQueries({ queryKey: [key] })` com a mesma key passada para o hook.
+
+### 🔔 Módulo de Notificações (TK-1462)
+- **Backend**: Domínio `notifications` criado em `src/app/domains/notifications/` seguindo o padrão de módulo NestJS (controller + service + module + DTO).
+  - O `NotificationHttpService` usa `RepositoryFactory` direto (sem injeção de dependência de repositórios), seguindo o mesmo padrão do `DashboardService`.
+- **Frontend**: `notificationActions.ts` usa `createAsyncThunk` para integrar com `usePagination` (que exige um AsyncThunk conforme seu tipo). Funções utilitárias (mark, count) são funções simples com `apiClient`.
+- **Sidebar**: Badge de não lidas carrega via `fetchUnreadCount` no mount — não usa Redux para evitar estado global de loading desnecessário.
+
 ---
-*Atualizado em: 2026-02-13*
+*Atualizado em: 2026-03-04*

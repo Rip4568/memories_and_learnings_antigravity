@@ -1,18 +1,14 @@
-playground
-daemon
-code_tracker
-browser_recordings
-brain
-annotations
-context_state
-conversations
-html_artifacts
-implicit
-mcp_config.json
-onboarding.json
-onboarding.json.lock
-user_settings.pb
-antigravity-browser-profile
-installation_id
-browserOnboardingStatus.txt
-browserAllowlist.txt
+# Ignorar tudo por padrão
+/*
+
+# Exceções (arquivos na raiz)
+!.gitignore
+!GEMINI.md
+
+# Exceções (pastas solicitadas dentro de antigravity)
+!antigravity/
+antigravity/*
+!antigravity/projects_memory/
+!antigravity/knowledge/
+!antigravity/learning/
+!antigravity/global_skills/
