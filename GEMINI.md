@@ -6,6 +6,10 @@
 ## Principios
 Sempre ler os arquivos de memorys e learnings do projeto e contexto que estiver trabalhando, assim garante de seguir estrtura proposta.
 
+## Regras de Escopo de Busca
+- **Escopo Principal**: Restrinja buscas e operações ao diretório `Desktop/work`, onde se concentra a maioria dos projetos.
+- **Performance**: Evite realizar varreduras em todo o sistema operacional para prevenir latência excessiva.
+- **Acesso Externo**: Diretórios fora do escopo padrão (ex: `C:\Users\user\Documents`) só devem ser acessados mediante instrução explícita.
 
 ## 1. Core Directives
 **ALWAYS** read the internal files in the `global_skills` folder to align with the user's coding standards.

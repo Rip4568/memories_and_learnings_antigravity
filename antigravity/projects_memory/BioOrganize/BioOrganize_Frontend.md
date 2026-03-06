@@ -46,5 +46,9 @@
 - **Frontend**: `notificationActions.ts` usa `createAsyncThunk` para integrar com `usePagination` (que exige um AsyncThunk conforme seu tipo). Funções utilitárias (mark, count) são funções simples com `apiClient`.
 - **Sidebar**: Badge de não lidas carrega via `fetchUnreadCount` no mount — não usa Redux para evitar estado global de loading desnecessário.
 
+### 📄 Detalhes do Procedimento (Híbrido)
+- **Flexibilidade**: A página `ProvidedProcedureDetails.tsx` foi refatorada para carregar tanto Agendamentos (`Appointment`) quanto Execuções (`ProvidedProcedure`), detectando o tipo via `location.state` ou fallback automático.
+- **UX de Reagendamento**: Implementado o sistema de arraste vertical no calendário com Snap de 30min e ativação por Long Press (500ms).
+
 ---
-*Atualizado em: 2026-03-04*
+*Atualizado em: 2026-03-05*

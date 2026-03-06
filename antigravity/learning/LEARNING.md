@@ -33,6 +33,7 @@ _General knowledge applicable across multiple projects (Vue, Laravel, Git, etc.)
 - [Preferência por Animações Criativas e "Out of the Box"](file:///c:/Users/user/.gemini/antigravity/learning/preference_for_creative_animations_out_of_the_box.md)
 
 ### Frontend e Estilização
+- [Bio-Organize: Padrões de Modais e Botões Premium](file:///c:/Users/user/.gemini/antigravity/learning/BioOrganize_UI_Premium_Standards.md)
 - [Tailwind v4 & SASS Conflict (Hybrid Refactor)](file:///c:/Users/user/.gemini/antigravity/learning/Tailwind_v4_Hybrid_Refactor_Insights.md)
 - [Tailwind v4 Config Conflict (Vite)](file:///c:/Users/user/.gemini/antigravity/learning/tailwind_v4_config_conflict_vite.md)
 - [Double Scrollbar Bug (Nested Vuetify Components)](file:///c:/Users/user/.gemini/antigravity/learning/double_scrollbar_bug_nested_vuetify_components.md)
