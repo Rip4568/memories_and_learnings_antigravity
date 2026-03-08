@@ -49,6 +49,7 @@ _General knowledge applicable across multiple projects (Vue, Laravel, Git, etc.)
 - [Rules of Hooks em React-Three-Fiber](file:///c:/Users/user/.gemini/antigravity/learning/rules_of_hooks_in_react_three_fiber.md)
 - [WebP Animados e Vídeos em Texturas Three.js (React Three Fiber)](file:///c:/Users/user/.gemini/antigravity/learning/animated_webp_and_videos_in_threejs_textures.md)
 - [Redux Toolkit: Separação de Actions (Thunks) e Slices](file:///c:/Users/user/.gemini/antigravity/learning/redux_toolkit_separation_of_actions_thunks_and_slices.md)
+- [React & MUI: Pickers Imperativos com forwardRef e Tipagem Flexível](file:///c:/Users/user/.gemini/antigravity/learning/react_mui_imperative_pickers_forwardref.md)
 
 ### Backend e APIs
 - [ISO 8601 Date Strings vs HTML Date Inputs](file:///c:/Users/user/.gemini/antigravity/learning/iso_8601_date_strings_vs_html_date_inputs.md)

@@ -50,5 +50,12 @@
 - **Flexibilidade**: A página `ProvidedProcedureDetails.tsx` foi refatorada para carregar tanto Agendamentos (`Appointment`) quanto Execuções (`ProvidedProcedure`), detectando o tipo via `location.state` ou fallback automático.
 - **UX de Reagendamento**: Implementado o sistema de arraste vertical no calendário com Snap de 30min e ativação por Long Press (500ms).
 
+### 🎨 Componentes Premium (Pickers)
+- **Pickers (Data e Hora)**: Os componentes customizados (`AppDatePicker`, `AppTimePicker`) foram refatorados para aceitar um `forwardRef` com `useImperativeHandle`. Isso expõe a função `open(e: React.MouseEvent<any>)`, permitindo que o Modal Details os acione diretamente, escondendo o TextField e exibindo apenas a UI rica (Popovers/Dialogs). **Sempre usar a tipagem `any` ou genérica no evento para evitar conflitos com HTMLElement do MUI ao acionar programaticamente.**
+
+### 💰 Formatação de Preços
+- **Database (Cents)**: Todos os valores enviados para o backend (API/Prisma) DEVEM ser em centavos inteiros (ex: R$ 29,31 -> `2931`). Se você não converter, a tag de class-validator (isInteger) falhará (`price must be an integer number`).
+- **Helpers Frontend**: Utilizar `formatCurrency(price / 100)` para exibição na UI quando o dado vier do banco em centavos.
+
 ---
-*Atualizado em: 2026-03-05*
+*Atualizado em: 2026-03-08*
