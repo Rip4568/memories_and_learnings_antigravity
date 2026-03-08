@@ -42,5 +42,14 @@
 2. Compartilha a instância singleton do `WhatsappService`, aproveitando a conexão ativa.
 3. `QueueProcessor` e Jobs devem usar Injeção de Dependência (DI) e não instanciar services manualmente.
 
+### 📅 Arquitetura de Agendamentos Múltiplos (Hierarquia de Sessão)
+**Situação**: O sistema necessitava agendar múltiplos serviços (ex: Botox e Laser) num mesmo bloco de horários no calendário, sem criar N Appointments isolados que bugassem conflitos e reagendamentos visuais.
+**Decisão**: O agrupamento visual e estrutural foi centralizado **no Backend**.
+**Padrão**:
+1. É criado apenas **1** `Appointment` âncora usando o primeiro `procedureId`.
+2. O Backend cria **1** `ProvidedSession` ligada a esse appointment âncora.
+3. O Backend cria **N** `ProvidedProcedures` filhos dessa sessão.
+4. Ao dar `.list()`, o Backend soma nativamente as durações buscando os tempos na tabela `ClinicProcedure` associada aos filhos e gera um objeto aninhado `.session` para o calendário iterar a altura exata.
+
 ---
-*Atualizado em: 2026-02-24*
+*Atualizado em: 2026-03-08*
