@@ -50,6 +50,7 @@ _General knowledge applicable across multiple projects (Vue, Laravel, Git, etc.)
 - [WebP Animados e Vídeos em Texturas Three.js (React Three Fiber)](file:///c:/Users/user/.gemini/antigravity/learning/animated_webp_and_videos_in_threejs_textures.md)
 - [Redux Toolkit: Separação de Actions (Thunks) e Slices](file:///c:/Users/user/.gemini/antigravity/learning/redux_toolkit_separation_of_actions_thunks_and_slices.md)
 - [React & MUI: Pickers Imperativos com forwardRef e Tipagem Flexível](file:///c:/Users/user/.gemini/antigravity/learning/react_mui_imperative_pickers_forwardref.md)
+- [Bio-Organize: Erro de MIME Type & Conflito de Versão Node.js (Node 20 vs 22)](file:///c:/Users/user/.gemini/antigravity/learning/node_version_conflict_mime_type.md)
 
 ### Backend e APIs
 - [ISO 8601 Date Strings vs HTML Date Inputs](file:///c:/Users/user/.gemini/antigravity/learning/iso_8601_date_strings_vs_html_date_inputs.md)
@@ -61,5 +62,6 @@ _General knowledge applicable across multiple projects (Vue, Laravel, Git, etc.)
 - [Tailwind Error V4 and V3 Configuration](file:///c:/Users/user/.gemini/antigravity/learning/tailwind_error_v4_and_v3_configuration_exaclty.md)
 - [Arquitetura de Módulo de Lembretes Em Fila (Golembrar)](file:///C:/Users/user/.gemini/antigravity/learning/golembrar_architecture_and_reminders.md)
 - [API Design: Separação de Endpoints de Sumário e Paginação](file:///c:/Users/user/.gemini/antigravity/learning/api_design_separation_summary_pagination.md)
+- [Geração de Planilhas Excel Ultra Premium (Dashboards UI-like)](file:///C:/Users/user/.gemini/antigravity/learning/Excel_Premium_Dashboards.md)
 
 <!-- Add new entries above this line -->
