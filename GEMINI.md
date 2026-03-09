@@ -8,8 +8,9 @@ Sempre ler os arquivos de memorys e learnings do projeto e contexto que estiver 
 
 ## Regras de Escopo de Busca
 - **Escopo Principal**: Restrinja buscas e operações ao diretório `Desktop/work`, onde se concentra a maioria dos projetos.
-- **Performance**: Evite realizar varreduras em todo o sistema operacional para prevenir latência excessiva.
-- **Acesso Externo**: Diretórios fora do escopo padrão (ex: `C:\Users\user\Documents`) só devem ser acessados mediante instrução explícita.
+- **Performance & Exclusão**: **SEMPRE** utilize padrões de exclusão para pastas de dependências e arquivos de build em qualquer ferramenta de busca (`grep_search`, `glob`, `list_directory`). 
+  - Pastas a ignorar: `node_modules`, `vendor`, `.git`, `.angular`, `.nx`, `dist`, `out`, `storage`, `temp`.
+- **Validação de Subprojeto**: Antes de realizar buscas globais em um repositório monorepo ou com múltiplas pastas (ex: `golembrar-web` vs `golembrar-admin`), valide em qual subdiretório a tarefa deve ser executada para evitar buscas desnecessárias.
 
 ## 1. Core Directives
 **ALWAYS** read the internal files in the `global_skills` folder to align with the user's coding standards.
