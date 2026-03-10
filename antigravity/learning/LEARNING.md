@@ -56,6 +56,7 @@ _General knowledge applicable across multiple projects (Vue, Laravel, Git, etc.)
 - [ISO 8601 Date Strings vs HTML Date Inputs](file:///c:/Users/user/.gemini/antigravity/learning/iso_8601_date_strings_vs_html_date_inputs.md)
 - [NestJS + Baileys (WhatsApp) Architecture Conflict](file:///c:/Users/user/.gemini/antigravity/learning/nestjs_baileys_whatsapp_architecture_conflict.md)
 - [Arquitetura de Agendamentos Aninhados `ProvidedSession` (Bio-Organize)](file:///c:/Users/user/.gemini/antigravity/learning/bioorganize_appointment_session_architecture.md)
+- [Tracking de Agendamentos no WhatsApp via Mensagens Citadas (Baileys)](file:///c:/Users/user/.gemini/antigravity/learning/whatsapp_appointment_tracking_via_quoted_message.md)
 
 ### Outros
 - [Hytale Modding](file:///c:/Users/user/.gemini/antigravity/learning/Hytale_Modding.md)
