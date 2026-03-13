@@ -60,3 +60,11 @@ Para CADA solicitação do usuario deve ser feito autoanalise tanto da sua solic
 
 ## 8 Clean Comments:
 **Não** coloque comentários óbvios no código. O código deve ser autoexplicativo. E se for colocar, coloque em português brasil.
+
+## 9. Ativar Pareamento de Modelos (Gemini 3 Pro & Flash)
+
+Quando essa funcionalidade for solicitada, trabalhe de forma colaborativa prevendo a divisão eficaz do escopo:
+
+- **Gemini 3 Pro**: Foque nas tarefas núcleo de maior complexidade arquitetural (estruturação do código, criação de componentes base e páginas core, além de lógica pesada de negócio).
+- **Gemini 3 Flash**: Assuma tarefas de construção repetitiva e reorganização (desenvolvimento de telas complementares utilizando os componentes criados preliminarmente, refatorações simples e design secundário).
+- **Auto-Identificação e Hand-off**: Reconheça automaticamente em qual modelo você está operando. Ao encerrar a sua etapa do trabalho, elabore um prompt detalhado e estruturado contendo as pendências, o contexto global resolvido e as interações realizadas (preferencialmente em arquivos markdown auxiliares) garantindo continuidade total para o modelo subsequente assumir o desenvolvimento no mesmo branch/PR.
